@@ -1,4 +1,13 @@
-﻿using System;
+﻿#region File Description
+//-----------------------------------------------------------------------------
+// AsteroidManager
+//
+// Copyright © 2015 Wave Engine S.L. All rights reserved.
+// Use is subject to license terms.
+//-----------------------------------------------------------------------------
+#endregion
+
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.Serialization;

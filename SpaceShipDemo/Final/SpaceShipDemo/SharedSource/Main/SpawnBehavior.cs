@@ -1,4 +1,13 @@
-﻿using System;
+﻿#region File Description
+//-----------------------------------------------------------------------------
+// SpawnBehavior
+//
+// Copyright © 2015 Wave Engine S.L. All rights reserved.
+// Use is subject to license terms.
+//-----------------------------------------------------------------------------
+#endregion
+
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.Serialization;
@@ -9,9 +18,15 @@ using WaveEngine.Framework.Graphics;
 
 namespace SpaceShipDemo
 {
+    /// <summary>
+    /// Spawning behavior
+    /// </summary>
     [DataContract]
     public class SpawnBehavior : Behavior
     {
+        /// <summary>
+        /// The transform
+        /// </summary>
         [RequiredComponent]
         public Transform3D Transform;
 
@@ -19,31 +34,46 @@ namespace SpaceShipDemo
         /// The end scale
         /// </summary>
         private Vector3 endScale;
-        private bool spawning = false;
 
+        /// <summary>
+        /// If the entity is spawning.
+        /// </summary>
+        private bool isSpawning = false;
+
+        /// <summary>
+        /// Spawns this instance.
+        /// </summary>
         public void Spawn()
         {
             this.endScale = this.Transform.Scale;
             this.Transform.Scale = Vector3.Zero;
-            this.spawning = true;
+            this.isSpawning = true;
         }
 
+        /// <summary>
+        /// Initializes this instance.
+        /// </summary>
         protected override void Initialize()
         {
             base.Initialize();
         }
 
+        /// <summary>
+        /// Updates the specified game time.
+        /// </summary>
+        /// <param name="gameTime">The game time.</param>
         protected override void Update(TimeSpan gameTime)
         {
-            if (this.spawning)
+            if (this.isSpawning)
             {
+                // Updates the scaling of the entity
                 var scale = this.Transform.Scale;
 
                 this.Transform.Scale = Vector3.Lerp(this.Transform.Scale, endScale, 0.005f);
 
                 if (scale.X >= this.endScale.X)
                 {
-                    this.spawning = false;
+                    this.isSpawning = false;
                 }
             }
         }
