@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 15/09/2015 12:56:10
+// File generated on 16/09/2015 08:53:09
 namespace SpaceShipDemo
 {
     using System;
