@@ -1,22 +1,20 @@
 ﻿<Scene xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>ca1e2372-d6d6-46d2-b894-6ae25ffff02f</Id>
-  <Entities xmlns:d2p1="WaveEngine.Framework">
-    <d2p1:Entity>
-      <d2p1:IsStatic>false</d2p1:IsStatic>
-      <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>ship</d2p1:Name>
+  <Entities xmlns:d2p1="WaveEngine.Framework.Models.Entities">
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens>
-        <d2p1:Entity>
-          <d2p1:IsStatic>false</d2p1:IsStatic>
-          <d2p1:IsVisible>true</d2p1:IsVisible>
-          <d2p1:Name>thrust2</d2p1:Name>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
-          <d2p1:SerializeComponents>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>thrust2</d2p1:name>
+          <d2p1:tag></d2p1:tag>
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
               <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:W>1</d8p1:W>
                 <d8p1:X>0</d8p1:X>
-                <d8p1:Y>-0</d8p1:Y>
+                <d8p1:Y>0</d8p1:Y>
                 <d8p1:Z>0</d8p1:Z>
               </d7p1:LocalOrientation>
               <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
@@ -29,31 +27,32 @@
                 <d8p1:Y>1</d8p1:Y>
                 <d8p1:Z>0.5</d8p1:Z>
               </d7p1:LocalScale>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/thrustMat.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/thrust.fbx.wpk</ModelPath>
               <d7p1:ModelType>Custom</d7p1:ModelType>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
-              <d2p1:IsVisible>true</d2p1:IsVisible>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
+              <d6p1:IsVisible>true</d6p1:IsVisible>
               <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-            </d2p1:Component>
+            </d6p1:Component>
           </d2p1:SerializeComponents>
-          <d2p1:Tag i:nil="true" />
-        </d2p1:Entity>
-        <d2p1:Entity>
-          <d2p1:IsStatic>false</d2p1:IsStatic>
-          <d2p1:IsVisible>true</d2p1:IsVisible>
-          <d2p1:Name>thrust3</d2p1:Name>
+        </d2p1:BaseEntityModel>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
-          <d2p1:SerializeComponents>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>thrust3</d2p1:name>
+          <d2p1:tag></d2p1:tag>
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
               <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:W>1</d8p1:W>
                 <d8p1:X>0</d8p1:X>
@@ -70,35 +69,36 @@
                 <d8p1:Y>1</d8p1:Y>
                 <d8p1:Z>0.5</d8p1:Z>
               </d7p1:LocalScale>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/thrustMat.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/thrust.fbx.wpk</ModelPath>
               <d7p1:ModelType>Custom</d7p1:ModelType>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
-              <d2p1:IsVisible>true</d2p1:IsVisible>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
+              <d6p1:IsVisible>true</d6p1:IsVisible>
               <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-            </d2p1:Component>
+            </d6p1:Component>
           </d2p1:SerializeComponents>
-          <d2p1:Tag i:nil="true" />
-        </d2p1:Entity>
-        <d2p1:Entity>
-          <d2p1:IsStatic>false</d2p1:IsStatic>
-          <d2p1:IsVisible>true</d2p1:IsVisible>
-          <d2p1:Name>thrust1</d2p1:Name>
+        </d2p1:BaseEntityModel>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
-          <d2p1:SerializeComponents>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>thrust1</d2p1:name>
+          <d2p1:tag></d2p1:tag>
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
               <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:W>1</d8p1:W>
                 <d8p1:X>0</d8p1:X>
-                <d8p1:Y>-0</d8p1:Y>
+                <d8p1:Y>0</d8p1:Y>
                 <d8p1:Z>0</d8p1:Z>
               </d7p1:LocalOrientation>
               <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
@@ -111,46 +111,46 @@
                 <d8p1:Y>1</d8p1:Y>
                 <d8p1:Z>1</d8p1:Z>
               </d7p1:LocalScale>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/thrustMat.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/thrust.fbx.wpk</ModelPath>
               <d7p1:ModelType>Custom</d7p1:ModelType>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
-              <d2p1:IsVisible>true</d2p1:IsVisible>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
+              <d6p1:IsVisible>true</d6p1:IsVisible>
               <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Spinner">
-              <d2p1:Family>DefaultBehavior</d2p1:Family>
-              <d2p1:IsActive>true</d2p1:IsActive>
-              <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Spinner">
+              <d6p1:IsActive>true</d6p1:IsActive>
+              <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
               <d7p1:AxisTotalIncreases xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:X>0</d8p1:X>
                 <d8p1:Y>0</d8p1:Y>
                 <d8p1:Z>8.726645</d8p1:Z>
               </d7p1:AxisTotalIncreases>
-            </d2p1:Component>
+            </d6p1:Component>
           </d2p1:SerializeComponents>
-          <d2p1:Tag i:nil="true" />
-        </d2p1:Entity>
-        <d2p1:Entity>
-          <d2p1:IsStatic>false</d2p1:IsStatic>
-          <d2p1:IsVisible>true</d2p1:IsVisible>
-          <d2p1:Name>cameraHolder</d2p1:Name>
+        </d2p1:BaseEntityModel>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
-          <d2p1:SerializeComponents>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>cameraHolder</d2p1:name>
+          <d2p1:tag></d2p1:tag>
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
               <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:W>0.990268052</d8p1:W>
                 <d8p1:X>-0.13917309</d8p1:X>
-                <d8p1:Y>-0</d8p1:Y>
-                <d8p1:Z>-0</d8p1:Z>
+                <d8p1:Y>0</d8p1:Y>
+                <d8p1:Z>0</d8p1:Z>
               </d7p1:LocalOrientation>
               <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:X>0</d8p1:X>
@@ -162,17 +162,17 @@
                 <d8p1:Y>1</d8p1:Y>
                 <d8p1:Z>1</d8p1:Z>
               </d7p1:LocalScale>
-            </d2p1:Component>
+            </d6p1:Component>
           </d2p1:SerializeComponents>
-          <d2p1:Tag i:nil="true" />
-        </d2p1:Entity>
-        <d2p1:Entity>
-          <d2p1:IsStatic>false</d2p1:IsStatic>
-          <d2p1:IsVisible>true</d2p1:IsVisible>
-          <d2p1:Name>light01</d2p1:Name>
+        </d2p1:BaseEntityModel>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
-          <d2p1:SerializeComponents>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>light01</d2p1:name>
+          <d2p1:tag></d2p1:tag>
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
               <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:W>1</d8p1:W>
                 <d8p1:X>0</d8p1:X>
@@ -189,8 +189,8 @@
                 <d8p1:Y>1</d8p1:Y>
                 <d8p1:Z>1</d8p1:Z>
               </d7p1:LocalScale>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:PointLightProperties">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:PointLightProperties">
               <d7p1:Color xmlns:d8p1="WaveEngine.Common.Graphics">
                 <d8p1:A>255</d8p1:A>
                 <d8p1:B>255</d8p1:B>
@@ -199,21 +199,21 @@
               </d7p1:Color>
               <d7p1:Intensity>1</d7p1:Intensity>
               <d7p1:LightRange>100</d7p1:LightRange>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:PointLightRenderer">
-              <d2p1:IsVisible>true</d2p1:IsVisible>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:PointLightRenderer">
+              <d6p1:IsVisible>true</d6p1:IsVisible>
               <d7p1:FrustumCullingEnabled>true</d7p1:FrustumCullingEnabled>
-            </d2p1:Component>
+            </d6p1:Component>
           </d2p1:SerializeComponents>
-          <d2p1:Tag i:nil="true" />
-        </d2p1:Entity>
-        <d2p1:Entity>
-          <d2p1:IsStatic>false</d2p1:IsStatic>
-          <d2p1:IsVisible>true</d2p1:IsVisible>
-          <d2p1:Name>dust</d2p1:Name>
+        </d2p1:BaseEntityModel>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
-          <d2p1:SerializeComponents>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>dust</d2p1:name>
+          <d2p1:tag></d2p1:tag>
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
               <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:W>0.999999642</d8p1:W>
                 <d8p1:X>0.000872664445</d8p1:X>
@@ -230,14 +230,15 @@
                 <d8p1:Y>1</d8p1:Y>
                 <d8p1:Z>1</d8p1:Z>
               </d7p1:LocalScale>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/starMat.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ParticleSystem3D">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ParticleSystem3D">
               <d7p1:AlphaEnabled>true</d7p1:AlphaEnabled>
               <d7p1:Bounciness>0</d7p1:Bounciness>
               <d7p1:CollisionBehavior>Die</d7p1:CollisionBehavior>
@@ -302,21 +303,21 @@
               </d7p1:RandomVelocity>
               <d7p1:endDeltaScale>1</d7p1:endDeltaScale>
               <d7p1:numParticles>50</d7p1:numParticles>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ParticleSystemRenderer3D">
-              <d2p1:IsVisible>true</d2p1:IsVisible>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ParticleSystemRenderer3D">
+              <d6p1:IsVisible>true</d6p1:IsVisible>
               <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-            </d2p1:Component>
+            </d6p1:Component>
           </d2p1:SerializeComponents>
-          <d2p1:Tag i:nil="true" />
-        </d2p1:Entity>
-        <d2p1:Entity>
-          <d2p1:IsStatic>false</d2p1:IsStatic>
-          <d2p1:IsVisible>true</d2p1:IsVisible>
-          <d2p1:Name>smoke</d2p1:Name>
+        </d2p1:BaseEntityModel>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
-          <d2p1:SerializeComponents>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>smoke</d2p1:name>
+          <d2p1:tag></d2p1:tag>
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
               <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:W>0.999999642</d8p1:W>
                 <d8p1:X>0.000872664445</d8p1:X>
@@ -333,14 +334,15 @@
                 <d8p1:Y>1</d8p1:Y>
                 <d8p1:Z>1</d8p1:Z>
               </d7p1:LocalScale>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/smokeMat.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ParticleSystem3D">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ParticleSystem3D">
               <d7p1:AlphaEnabled>true</d7p1:AlphaEnabled>
               <d7p1:Bounciness>0</d7p1:Bounciness>
               <d7p1:CollisionBehavior>Die</d7p1:CollisionBehavior>
@@ -405,21 +407,21 @@
               </d7p1:RandomVelocity>
               <d7p1:endDeltaScale>1</d7p1:endDeltaScale>
               <d7p1:numParticles>5</d7p1:numParticles>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ParticleSystemRenderer3D">
-              <d2p1:IsVisible>true</d2p1:IsVisible>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ParticleSystemRenderer3D">
+              <d6p1:IsVisible>true</d6p1:IsVisible>
               <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-            </d2p1:Component>
+            </d6p1:Component>
           </d2p1:SerializeComponents>
-          <d2p1:Tag i:nil="true" />
-        </d2p1:Entity>
-        <d2p1:Entity>
-          <d2p1:IsStatic>false</d2p1:IsStatic>
-          <d2p1:IsVisible>true</d2p1:IsVisible>
-          <d2p1:Name>cameraHolder2</d2p1:Name>
+        </d2p1:BaseEntityModel>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
-          <d2p1:SerializeComponents>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>cameraHolder2</d2p1:name>
+          <d2p1:tag></d2p1:tag>
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
               <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:W>0.984643042</d8p1:W>
                 <d8p1:X>-0.09002044</d8p1:X>
@@ -436,17 +438,17 @@
                 <d8p1:Y>1</d8p1:Y>
                 <d8p1:Z>1</d8p1:Z>
               </d7p1:LocalScale>
-            </d2p1:Component>
+            </d6p1:Component>
           </d2p1:SerializeComponents>
-          <d2p1:Tag i:nil="true" />
-        </d2p1:Entity>
-        <d2p1:Entity>
-          <d2p1:IsStatic>false</d2p1:IsStatic>
-          <d2p1:IsVisible>true</d2p1:IsVisible>
-          <d2p1:Name>engineSound</d2p1:Name>
+        </d2p1:BaseEntityModel>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
-          <d2p1:SerializeComponents>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>engineSound</d2p1:name>
+          <d2p1:tag></d2p1:tag>
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
               <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:W>0.9321595</d8p1:W>
                 <d8p1:X>-0.301374555</d8p1:X>
@@ -463,11 +465,10 @@
                 <d8p1:Y>0.75</d8p1:Y>
                 <d8p1:Z>0.75</d8p1:Z>
               </d7p1:LocalScale>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Sound" i:type="d7p1:SoundEmitter3D">
-              <d2p1:Family>DefaultBehavior</d2p1:Family>
-              <d2p1:IsActive>true</d2p1:IsActive>
-              <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Sound" i:type="d7p1:SoundEmitter3D">
+              <d6p1:IsActive>true</d6p1:IsActive>
+              <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
               <d7p1:DistanceScale>100</d7p1:DistanceScale>
               <d7p1:DopplerScale>2</d7p1:DopplerScale>
               <d7p1:IsMuted>false</d7p1:IsMuted>
@@ -475,18 +476,21 @@
               <d7p1:PlayAutomatically>true</d7p1:PlayAutomatically>
               <d7p1:SoundPath>Content/Assets/Sounds/engines_2.wav.wpk</d7p1:SoundPath>
               <d7p1:Volume>1</d7p1:Volume>
-            </d2p1:Component>
+            </d6p1:Component>
           </d2p1:SerializeComponents>
-          <d2p1:Tag i:nil="true" />
-        </d2p1:Entity>
+        </d2p1:BaseEntityModel>
       </d2p1:SerializeChildrens>
-      <d2p1:SerializeComponents>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>ship</d2p1:name>
+      <d2p1:tag></d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>1</d6p1:W>
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>-0</d6p1:Z>
+            <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -498,8 +502,8 @@
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath i:nil="true" />
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
@@ -511,29 +515,28 @@
               <d6p1:Value>Content/Assets/Materials/glassMat.wmat</d6p1:Value>
             </d6p1:KeyValueOfstringstring>
           </d5p1:MaterialsPath>
-          <d5p1:useDefaultMaterial>true</d5p1:useDefaultMaterial>
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
+          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/ship.fbx.wpk</ModelPath>
           <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
-          <d2p1:IsVisible>true</d2p1:IsVisible>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/SpaceShipDemo" i:type="d5p1:ShipBehavior">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
-          <d2p1:IsActive>true</d2p1:IsActive>
-          <d2p1:UpdateOrder>0.1</d2p1:UpdateOrder>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/SpaceShipDemo" i:type="d5p1:ShipBehavior">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:Acceleration>3</d5p1:Acceleration>
           <d5p1:Maneuverability>0.5</d5p1:Maneuverability>
           <d5p1:Speed>200</d5p1:Speed>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:SphereCollider3D">
-          <d2p1:Family>PriorityBehavior</d2p1:Family>
-          <d2p1:IsActive>true</d2p1:IsActive>
-          <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:SphereCollider3D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -541,22 +544,22 @@
             <d6p1:R>0</d6p1:R>
           </d5p1:DebugLineColor>
           <d5p1:Radius>0.8</d5p1:Radius>
-        </d2p1:Component>
+        </d4p1:Component>
       </d2p1:SerializeComponents>
-      <d2p1:Tag i:nil="true" />
-    </d2p1:Entity>
-    <d2p1:Entity>
-      <d2p1:IsStatic>false</d2p1:IsStatic>
-      <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>environment</d2p1:Name>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
-      <d2p1:SerializeComponents>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>environment</d2p1:name>
+      <d2p1:tag></d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>0.7071068</d6p1:W>
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0.7071067</d6p1:Y>
-            <d6p1:Z>-0</d6p1:Z>
+            <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -568,8 +571,8 @@
             <d6p1:Y>5</d6p1:Y>
             <d6p1:Z>5</d6p1:Z>
           </d5p1:LocalScale>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath i:nil="true" />
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
@@ -581,35 +584,35 @@
               <d6p1:Value>Content/Assets/Materials/starMat.wmat</d6p1:Value>
             </d6p1:KeyValueOfstringstring>
           </d5p1:MaterialsPath>
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/environment.fbx.wpk</ModelPath>
           <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
-          <d2p1:IsVisible>true</d2p1:IsVisible>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/SpaceShipDemo" i:type="d5p1:FollowBehavior">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
-          <d2p1:IsActive>true</d2p1:IsActive>
-          <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/SpaceShipDemo" i:type="d5p1:FollowBehavior">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:EntityPath>camera3D</d5p1:EntityPath>
           <d5p1:FollowRotation>false</d5p1:FollowRotation>
           <d5p1:Smooth>false</d5p1:Smooth>
-        </d2p1:Component>
+        </d4p1:Component>
       </d2p1:SerializeComponents>
-      <d2p1:Tag i:nil="true" />
-    </d2p1:Entity>
-    <d2p1:Entity>
-      <d2p1:IsStatic>false</d2p1:IsStatic>
-      <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>asteroids</d2p1:Name>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
-      <d2p1:SerializeComponents>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>asteroids</d2p1:name>
+      <d2p1:tag></d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>1</d6p1:W>
             <d6p1:X>0</d6p1:X>
@@ -626,27 +629,26 @@
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/SpaceShipDemo" i:type="d5p1:AsteroidManager">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
-          <d2p1:IsActive>true</d2p1:IsActive>
-          <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/SpaceShipDemo" i:type="d5p1:AsteroidManager">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AsteroidInterval>0.05</d5p1:AsteroidInterval>
           <d5p1:AsteroidSpread>300</d5p1:AsteroidSpread>
           <d5p1:Explosion>explosion</d5p1:Explosion>
           <d5p1:NumberOfAsteroids>200</d5p1:NumberOfAsteroids>
           <d5p1:Ship>ship</d5p1:Ship>
-        </d2p1:Component>
+        </d4p1:Component>
       </d2p1:SerializeComponents>
-      <d2p1:Tag i:nil="true" />
-    </d2p1:Entity>
-    <d2p1:Entity>
-      <d2p1:IsStatic>false</d2p1:IsStatic>
-      <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>asteroid1</d2p1:Name>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
-      <d2p1:SerializeComponents>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>asteroid1</d2p1:name>
+      <d2p1:tag></d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>1</d6p1:W>
             <d6p1:X>0</d6p1:X>
@@ -663,41 +665,41 @@
             <d6p1:Y>20</d6p1:Y>
             <d6p1:Z>20</d6p1:Z>
           </d5p1:LocalScale>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/Materials/asteroidMat.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/asteroid_1_0.fbx.wpk</ModelPath>
           <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
-          <d2p1:IsVisible>true</d2p1:IsVisible>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Spinner">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
-          <d2p1:IsActive>true</d2p1:IsActive>
-          <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Spinner">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AxisTotalIncreases xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0.8726645</d6p1:X>
             <d6p1:Y>0.8726645</d6p1:Y>
             <d6p1:Z>0.3490658</d6p1:Z>
           </d5p1:AxisTotalIncreases>
-        </d2p1:Component>
+        </d4p1:Component>
       </d2p1:SerializeComponents>
-      <d2p1:Tag i:nil="true" />
-    </d2p1:Entity>
-    <d2p1:Entity>
-      <d2p1:IsStatic>false</d2p1:IsStatic>
-      <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>asteroid2</d2p1:Name>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
-      <d2p1:SerializeComponents>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>asteroid2</d2p1:name>
+      <d2p1:tag></d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>1</d6p1:W>
             <d6p1:X>0</d6p1:X>
@@ -714,41 +716,41 @@
             <d6p1:Y>20</d6p1:Y>
             <d6p1:Z>20</d6p1:Z>
           </d5p1:LocalScale>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/Materials/asteroidMat.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/asteroid_2_0.fbx.wpk</ModelPath>
           <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
-          <d2p1:IsVisible>true</d2p1:IsVisible>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Spinner">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
-          <d2p1:IsActive>true</d2p1:IsActive>
-          <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Spinner">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AxisTotalIncreases xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>-0.8726645</d6p1:X>
             <d6p1:Y>0.523598731</d6p1:Y>
             <d6p1:Z>1.39626324</d6p1:Z>
           </d5p1:AxisTotalIncreases>
-        </d2p1:Component>
+        </d4p1:Component>
       </d2p1:SerializeComponents>
-      <d2p1:Tag i:nil="true" />
-    </d2p1:Entity>
-    <d2p1:Entity>
-      <d2p1:IsStatic>false</d2p1:IsStatic>
-      <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>asteroid3</d2p1:Name>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
-      <d2p1:SerializeComponents>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>asteroid3</d2p1:name>
+      <d2p1:tag></d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>1</d6p1:W>
             <d6p1:X>0</d6p1:X>
@@ -765,41 +767,41 @@
             <d6p1:Y>20</d6p1:Y>
             <d6p1:Z>20</d6p1:Z>
           </d5p1:LocalScale>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/Materials/asteroidMat.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/asteroid_3_0.fbx.wpk</ModelPath>
           <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
-          <d2p1:IsVisible>true</d2p1:IsVisible>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Spinner">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
-          <d2p1:IsActive>true</d2p1:IsActive>
-          <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Spinner">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AxisTotalIncreases xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0.8726645</d6p1:X>
             <d6p1:Y>0.8726645</d6p1:Y>
             <d6p1:Z>0.3490658</d6p1:Z>
           </d5p1:AxisTotalIncreases>
-        </d2p1:Component>
+        </d4p1:Component>
       </d2p1:SerializeComponents>
-      <d2p1:Tag i:nil="true" />
-    </d2p1:Entity>
-    <d2p1:Entity>
-      <d2p1:IsStatic>false</d2p1:IsStatic>
-      <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>asteroid4</d2p1:Name>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
-      <d2p1:SerializeComponents>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>asteroid4</d2p1:name>
+      <d2p1:tag></d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>1</d6p1:W>
             <d6p1:X>0</d6p1:X>
@@ -816,46 +818,43 @@
             <d6p1:Y>20</d6p1:Y>
             <d6p1:Z>20</d6p1:Z>
           </d5p1:LocalScale>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/Materials/asteroidMat.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/asteroid_4_0.fbx.wpk</ModelPath>
           <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
-          <d2p1:IsVisible>true</d2p1:IsVisible>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Spinner">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
-          <d2p1:IsActive>true</d2p1:IsActive>
-          <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Spinner">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AxisTotalIncreases xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0.8726645</d6p1:X>
             <d6p1:Y>0.8726645</d6p1:Y>
             <d6p1:Z>0.3490658</d6p1:Z>
           </d5p1:AxisTotalIncreases>
-        </d2p1:Component>
+        </d4p1:Component>
       </d2p1:SerializeComponents>
-      <d2p1:Tag i:nil="true" />
-    </d2p1:Entity>
-    <d2p1:Entity>
-      <d2p1:IsStatic>false</d2p1:IsStatic>
-      <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>explosion</d2p1:Name>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens>
-        <d2p1:Entity>
-          <d2p1:IsStatic>false</d2p1:IsStatic>
-          <d2p1:IsVisible>true</d2p1:IsVisible>
-          <d2p1:Name>explosionSound</d2p1:Name>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
-          <d2p1:SerializeComponents>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>explosionSound</d2p1:name>
+          <d2p1:tag></d2p1:tag>
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
               <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:W>0.9228604</d8p1:W>
                 <d8p1:X>-0.298368573</d8p1:X>
@@ -872,11 +871,10 @@
                 <d8p1:Y>0.75</d8p1:Y>
                 <d8p1:Z>0.75</d8p1:Z>
               </d7p1:LocalScale>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Sound" i:type="d7p1:SoundEmitter3D">
-              <d2p1:Family>DefaultBehavior</d2p1:Family>
-              <d2p1:IsActive>true</d2p1:IsActive>
-              <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Sound" i:type="d7p1:SoundEmitter3D">
+              <d6p1:IsActive>true</d6p1:IsActive>
+              <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
               <d7p1:DistanceScale>100</d7p1:DistanceScale>
               <d7p1:DopplerScale>1</d7p1:DopplerScale>
               <d7p1:IsMuted>false</d7p1:IsMuted>
@@ -884,13 +882,16 @@
               <d7p1:PlayAutomatically>false</d7p1:PlayAutomatically>
               <d7p1:SoundPath>Content/Assets/Sounds/explosion.wav.wpk</d7p1:SoundPath>
               <d7p1:Volume>1</d7p1:Volume>
-            </d2p1:Component>
+            </d6p1:Component>
           </d2p1:SerializeComponents>
-          <d2p1:Tag i:nil="true" />
-        </d2p1:Entity>
+        </d2p1:BaseEntityModel>
       </d2p1:SerializeChildrens>
-      <d2p1:SerializeComponents>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>explosion</d2p1:name>
+      <d2p1:tag></d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>1</d6p1:W>
             <d6p1:X>0</d6p1:X>
@@ -907,14 +908,15 @@
             <d6p1:Y>0.75</d6p1:Y>
             <d6p1:Z>0.75</d6p1:Z>
           </d5p1:LocalScale>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/Materials/fireMat.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ParticleSystem3D">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ParticleSystem3D">
           <d5p1:AlphaEnabled>false</d5p1:AlphaEnabled>
           <d5p1:Bounciness>0</d5p1:Bounciness>
           <d5p1:CollisionBehavior>Die</d5p1:CollisionBehavior>
@@ -979,21 +981,21 @@
           </d5p1:RandomVelocity>
           <d5p1:endDeltaScale>0</d5p1:endDeltaScale>
           <d5p1:numParticles>100</d5p1:numParticles>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ParticleSystemRenderer3D">
-          <d2p1:IsVisible>true</d2p1:IsVisible>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ParticleSystemRenderer3D">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-        </d2p1:Component>
+        </d4p1:Component>
       </d2p1:SerializeComponents>
-      <d2p1:Tag i:nil="true" />
-    </d2p1:Entity>
-    <d2p1:Entity>
-      <d2p1:IsStatic>false</d2p1:IsStatic>
-      <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>camera3D</d2p1:Name>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
-      <d2p1:SerializeComponents>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>camera3D</d2p1:name>
+      <d2p1:tag></d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>0.9829358</d6p1:W>
             <d6p1:X>-0.09345738</d6p1:X>
@@ -1010,33 +1012,42 @@
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Camera3D">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Camera3D">
           <d5p1:BackgroundColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>237</d6p1:B>
             <d6p1:G>149</d6p1:G>
             <d6p1:R>100</d6p1:R>
           </d5p1:BackgroundColor>
+          <d5p1:CameraOrder>0</d5p1:CameraOrder>
           <d5p1:ClearFlags>All</d5p1:ClearFlags>
           <d5p1:FarPlane>5000</d5p1:FarPlane>
           <d5p1:FieldOfView>0.8</d5p1:FieldOfView>
           <d5p1:IsActive>true</d5p1:IsActive>
+          <d5p1:LayerMaskDefaultValue>true</d5p1:LayerMaskDefaultValue>
           <d5p1:NearPlane>1</d5p1:NearPlane>
           <d5p1:UpVector xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
-          <d5p1:AspectRatio>1.78217816</d5p1:AspectRatio>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Sound" i:type="d5p1:SoundListener3D">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
-          <d2p1:IsActive>true</d2p1:IsActive>
-          <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Skybox">
-          <d2p1:IsVisible>true</d2p1:IsVisible>
+          <d5p1:Viewport xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:Height>1</d6p1:Height>
+            <d6p1:MaxDepth>1</d6p1:MaxDepth>
+            <d6p1:MinDepth>0</d6p1:MinDepth>
+            <d6p1:Width>1</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Viewport>
+          <d5p1:AspectRatio>1.96131527</d5p1:AspectRatio>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Sound" i:type="d5p1:SoundListener3D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Skybox">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
           <d5p1:FrustumCullingEnabled>true</d5p1:FrustumCullingEnabled>
           <d5p1:CubemapPath>Content/Assets/Textures/spaceBackground.cubemap.wpk</d5p1:CubemapPath>
           <d5p1:Orientation xmlns:d6p1="WaveEngine.Common.Math">
@@ -1045,18 +1056,16 @@
             <d6p1:Y>0</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:Orientation>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/SpaceShipDemo" i:type="d5p1:FollowBehavior">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
-          <d2p1:IsActive>true</d2p1:IsActive>
-          <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/SpaceShipDemo" i:type="d5p1:FollowBehavior">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:EntityPath>ship.cameraHolder</d5p1:EntityPath>
           <d5p1:FollowRotation>true</d5p1:FollowRotation>
           <d5p1:Smooth>true</d5p1:Smooth>
-        </d2p1:Component>
+        </d4p1:Component>
       </d2p1:SerializeComponents>
-      <d2p1:Tag i:nil="true" />
-    </d2p1:Entity>
+    </d2p1:BaseEntityModel>
   </Entities>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
     <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -1073,6 +1082,16 @@
             <d6p1:Y>-9.8</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:Gravity3D>
+        </d3p1:Value>
+      </d3p1:KeyValueOfstringanyType>
+      <d3p1:KeyValueOfstringanyType>
+        <d3p1:Key>VirtualScreen</d3p1:Key>
+        <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Managers" i:type="d5p1:VirtualScreenManager">
+          <d5p1:Enabled>false</d5p1:Enabled>
+          <d5p1:Expand>true</d5p1:Expand>
+          <d5p1:Stretch>Uniform</d5p1:Stretch>
+          <d5p1:VirtualHeight>517</d5p1:VirtualHeight>
+          <d5p1:VirtualWidth>1014</d5p1:VirtualWidth>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
     </d2p1:Categories>
